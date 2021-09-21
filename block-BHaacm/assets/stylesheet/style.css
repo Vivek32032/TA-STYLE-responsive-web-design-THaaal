@@ -1,0 +1,330 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* custom css */
+
+:root {
+    --primary: rgb(34,41,70);
+    --secondary: rgb(75,182,103);
+    --text-color: rgb(131,132,135);
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    
+  
+}
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.text-left {
+    text-align: left;
+}
+.font-0 {
+    font-size: 0px;
+}
+
+/* button */
+.btn {
+    background-color: var(--secondary);
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.btn-primary {
+    font-size: 2.4rem;
+    padding: 1.2rem 4.5rem;
+    margin: 3rem 0;
+
+}
+.btn-secondary {
+    font-size: 2rem;
+    padding: 0.75rem 2rem;
+    margin-bottom: 3.5rem;
+}
+/* header */
+
+.header {
+    background-color: var(--primary);
+    padding: 2.7rem 0;
+    text-align: center;
+}
+.navbar li {
+    display: inline-block;
+    margin: 0 1.2rem;
+    margin-top: 2rem;
+}
+.navbar a{
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+.active {
+    color: var(--secondary);
+}
+nav a:hover {
+    color: rgb(75,182,103);
+}
+
+/* main sections */
+.hero {
+    background-color: rgb(233,236,252);
+    padding: 3rem 0;
+
+}
+
+.hero img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    color: rgb(4,8,19);
+}
+
+.para {
+    font-size: 2rem;
+    color: rgb(131,132,135);
+    margin: 1.8rem 0;
+
+}
+
+/* blog */
+.blog {
+    margin-top: 1rem;
+}
+.blog h2{
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 3rem 0 2rem 0 ;
+}
+
+.blog img {
+    width: 100%;
+}
+.blog h3 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+.blog-para {
+   font-size: 1.54rem;
+   color: rgb(131,132,135);
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary);
+    color: rgb(211, 215, 241);
+    padding: 1.7rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+i {
+    color: rgb(211, 215, 241);
+    padding-bottom: 0;
+    font-size: 2.8rem;
+    margin-top: 0.75rem;
+    
+}
+
+
+
+@media screen and (min-width: 786px){
+
+ html {
+    font-size: 16px; 
+}   
+
+  /* flex */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+
+}
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: start;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-50 {
+    flex: 0 1 50%;
+}
+.flex-32 {
+    flex: 0 1 31%;
+}
+
+/* button */
+.btn-primary {
+    font-size: 1.5rem;
+    padding: 0.75rem 1.75rem;
+    margin: 1rem 0 2.5rem 0;
+    font-weight: 500;
+
+}
+.btn-secondary {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+/* header */
+
+.header {
+    padding: 1rem 0;
+    /* text-align: center; */
+}
+
+.navbar li {
+    margin: 0 1rem;
+    margin-top: 0;
+}
+.navbar a{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+/* main section */
+
+.hero {
+    background-color: rgb(233,236,252);
+    padding: 4rem 0 2rem 0;
+}
+h1 {
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin-top: 0;
+    line-height: 1;
+}
+
+.para {
+    font-size: 1.3rem;
+    color: rgb(131,132,135);
+    margin: 1rem 0;
+    padding: 0.75rem 2rem 0 0;
+
+}
+
+/* blog */
+.blog {
+    margin-bottom: 2rem;
+} 
+.blog h2{
+    font-size: 3rem;
+    line-height: 1;
+    padding-bottom: 2.5rem;
+
+    
+}
+
+.blog img {
+    width: 100%;
+}
+.blog h3 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+.blog-para {
+   font-size: 1rem;
+   color: rgb(131,132,135);
+   margin-top: 0.5rem;
+   margin-bottom: 1rem;
+}
+
+/* footer */
+footer {
+    padding: 2rem;
+    font-size: 1.7rem;
+}
+
+i {
+    font-size: 2rem;
+    margin-top: 0.75rem;
+}
+
+
+
+
+
+}
